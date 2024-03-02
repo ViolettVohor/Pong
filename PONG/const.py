@@ -8,7 +8,7 @@ PURPLE2 = (150, 0, 244)
 
 # Score
 SCORE_FONT = pygame.font.SysFont("comicsans", 50)
-WINNING_SCORE = 1
+WINNING_SCORE = 10
 
 # Window Related
 WIDTH, HEIGHT = 700, 500
