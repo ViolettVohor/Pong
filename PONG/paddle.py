@@ -1,4 +1,4 @@
-from const import *
+from PONG.const import *
 import pygame
 
 class Paddle:
@@ -7,6 +7,7 @@ class Paddle:
         self.y = self.original_y = y
         self.width = width
         self.height = height
+        self.hits = 0
 
     def draw(self, wind):
         pygame.draw.rect(wind, PADDLE_COLOR, (self.x, self.y, self.width, self.height))
