@@ -1,4 +1,4 @@
-from PONG.solution import main
+from PONG.solution import game
 import pickle
 import neat
 
@@ -22,9 +22,3 @@ def eval_genomes(genomes, config):
         for genome_id2, genome2 in genomes[i+1:]:
             genome2.fitness = 0 if genome2.fitness == None else genome2.fitness
             main([genome1, genome2], config, True, False)
-    
-def against_ai(config):
-    with open("best.pickle", "rb") as file:
-        best = pickle.load(file)
-
-    main([best, None], config)

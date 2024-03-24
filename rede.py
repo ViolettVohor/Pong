@@ -11,7 +11,7 @@ def start_ai(genomes, config):
 
     return nets
 
-def loop_ai(nets, info, config):
+def loop_ai(nets, info):
     for i in range(0, len(nets)):
         if nets[i] != None:
             outputs = nets[i].activate((info[0].y, info[i+1].y, abs(info[i+1].x - info[0].x)))

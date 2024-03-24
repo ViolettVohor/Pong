@@ -8,12 +8,13 @@ PURPLE2 = (150, 0, 244)
 
 # Score
 SCORE_FONT = pygame.font.SysFont("comicsans", 50)
-WINNING_SCORE = 1
 
 # Window Related
 WIDTH, HEIGHT = 700, 500
 WIND_COLOR = BLACK
 FPS = 60
+SCREEN_BUTTON = WHITE
+SEL_SCREEN_BUTTON = PURPLE
 
 # Paddle Related
 PADDLE_WIDTH, PADDLE_HEIGHT = 20, 100
